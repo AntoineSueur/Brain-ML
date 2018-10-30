@@ -31,9 +31,9 @@ def generate_random_image(w, h, n_points_row):
 def generate_examples(n_samples):
     w,h = 224, 224    
     n_points_per_row = 3
-    with open('Data/Circle_text/circle_annotations.txt', 'w') as f:
+    with open('Data/Circle_text/circle_annotations_train.txt', 'w') as f:
         for i in range(n_samples):
             image, caption = generate_random_image(w, h, n_points_per_row)
-            cv2.imwrite('Data/Circle_Dataset/train/image{}.jpg'.format(i), image)
-            f.write('image{}.jpg#0 '.format(i) + '\t' + caption + '\n')
+            cv2.imwrite('Data/Circle_Dataset/train/images/image_train_{}.jpg'.format(i), image)
+            f.write('image_train_{}.jpg#0 '.format(i) + '\t' + caption + '\n')
     f.close()
