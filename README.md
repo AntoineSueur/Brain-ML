@@ -10,14 +10,14 @@ Run the generate_dataset.py file to generate training and test images and captio
 Run the Text_labelling.ipynb notebook.
 
 You should get the following output after model training and clustering : 
-![alt text](https://github.com/AntoineTelecom/Brain-ML/blob/master/Architecture.PNG)
+![alt text](https://github.com/AntoineTelecom/Brain-ML/blob/master/BCPNN_clusters.png)
 
 
 ### Model Architecture
 
 This is an overview of the model: 
 
-![alt text](https://github.com/AntoineTelecom/Brain-ML/blob/master/BCPNN_clusters.png)
+![alt text](https://github.com/AntoineTelecom/Brain-ML/blob/master/Architecture.PNG)
 
 It uses Word2Vec and Resnet-18 as feature extractors which are then encoded using an overcomplete autoencoder and fed to a Bayesian Confidence Propagation Neural Network (BCPNN). This model uses associative learning (also called hebbian learning) instead of backpropagation to train a model in a more biologically plausible manner.
 
