@@ -6,14 +6,16 @@ Research project on brain inspired architectures for multi-modal unsupervised le
 
 To run the script and  generate training and test images and captions.
 
-``` python generate_dataset.py
+``` 
+python generate_dataset.py
 ```
+
 
 
 Run the Text_labelling.ipynb notebook.
 
 You should get the following output after model training and clustering : 
-![alt text](https://github.com/AntoineTelecom/Brain-ML/blob/master/BCPNN_clusters.png)
+![](https://github.com/AntoineTelecom/Brain-ML/blob/master/BCPNN_clusters.png | width= 640)
 
 
 ### Model Architecture
